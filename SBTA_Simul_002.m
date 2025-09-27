@@ -67,11 +67,7 @@ lgnd_4 = ['Lower error rate @ [p_{m} = ' num2str(PP(j_str_d),'%.2f') ']'];
 
 
 xlb = ['Accountability of each node (p_{m}), M = [' num2str(min(MM)) ', ' num2str(max(MM)) ']'];
-%xlb = ['Node accountability (M_{max} = ' num2str(M0) ' nodes)'];
 ylb = ['Mean square error rate (MSER)']; % (@rho = ' num2str( rho*100, '%.0f') '%)'];
-%tle = ['Secure network design (total ' num2str(M0) ' nodes)'];
-%tle = ['MSE Analysis (between ' num2str(min(MM)) ' and ' num2str(max(MM)) ' nodes)'];
-%tle = ['MSE between E[G(X)] and G(E[X]), M=[10,200]'];
 tle = ['MSER between E[G(X)] and G(E[X])'];
 
 figure
@@ -90,14 +86,6 @@ plot(PP(j_str_d),ProLine_g(j_str_d),'rs','MarkerSize',10,'MarkerFaceColor','r');
 plot(PP,MSE_up);
 plot(PP,MSE_dn);
 plot(PP,ProLine_g,'m.','LineWidth',5);
-
-
-
-
-
-%plot(PP(i_str_u),ProLine_u(i_str_u),'rs','MarkerSize',10,'MarkerFaceColor','r');
-%plot(PP(i_str_d),ProLine_d(i_str_d),'bs','MarkerSize',10,'MarkerFaceColor','b');
-%legend(lgnd_1, lgnd_2, lgnd_3,'location', 'northeast');
 legend(lgnd_1, lgnd_2,'location', 'northeast');
 
-%legend(lgnd_1,lgnd_2, lgnd_3,'location', 'northeast','Orientation','horizontal');
+
