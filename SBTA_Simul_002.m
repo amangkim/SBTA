@@ -88,4 +88,6 @@ plot(PP,MSE_dn);
 plot(PP,ProLine_g,'m.','LineWidth',5);
 legend(lgnd_1, lgnd_2,'location', 'northeast');
 
+hold off
+
 
